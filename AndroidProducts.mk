@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lisa.mk
+    $(LOCAL_DIR)/lineage_taoyao.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lisa-user \
-    lineage_lisa-userdebug \
-    lineage_lisa-eng
+    lineage_taoyao-user \
+    lineage_taoyao-userdebug \
+    lineage_taoyao-eng

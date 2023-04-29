@@ -14,12 +14,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlays-RRO
 PRODUCT_PACKAGES += \
-    lisaCNSettingsProviderOverlay \
-    lisaCNWifiOverlay \
-    lisaGLSettingsProviderOverlay \
-    lisaGLWifiOverlay \
-    lisaINSettingsProviderOverlay \
-    lisaINWifiOverlay
+    taoyaoCNSettingsProviderOverlay \
+    taoyaoCNWifiOverlay \
+    taoyaoGLSettingsProviderOverlay \
+    taoyaoGLWifiOverlay \
+    taoyaoINSettingsProviderOverlay \
+    taoyaoINWifiOverlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -36,11 +36,11 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.lisa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lisa.rc
+    $(LOCAL_PATH)/rootdir/etc/init.taoyao.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.taoyao.rc
 
 # WiFi Display
 PRODUCT_SYSTEM_PROPERTIES += \
     vendor.sys.video.disable.ubwc=1
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/lisa/lisa-vendor.mk)
+$(call inherit-product, vendor/xiaomi/taoyao/taoyao-vendor.mk)

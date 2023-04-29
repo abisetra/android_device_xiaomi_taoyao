@@ -29,7 +29,7 @@ fi
 set -e
 
 # Required!
-export DEVICE=lisa
+export DEVICE=taoyao
 export DEVICE_COMMON=sm8350-common
 export VENDOR=xiaomi
 
