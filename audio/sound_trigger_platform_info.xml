@@ -87,6 +87,7 @@
         <param sample_rate="16000" />
         <param bit_width="16" />
         <param out_channels="1"/> <!-- Module output channels -->
+        <param dam_token_id="1"/>
 
         <arm_ss_usecase>
             <!-- Options are "KEYWORD_DETECTION", "USER_VERIFICATION", "CUSTOM_DETECTION"  -->
@@ -125,7 +126,7 @@
             <!-- fluence_type: "FLUENCE_MIC", "FLUENCE_DMIC", "FLUENCE_TMIC"   -->
             <!-- "FLUENCE_QMIC". Param value is valid when adm_cfg_profile -->
             <!-- is FFECNS -->
-            <param fluence_type="FLUENCE_DMIC" />
+            <param fluence_type="FLUENCE_MIC" />
             <param execution_mode="ADSP" />
             <!-- lpi_mode: "NON_LPI_BARGE_IN", "NON_LPI", "LPI" -->
             <!-- NON_LPI_BARGE_IN: Default non-LPI mode type. lsm_usecase -->
@@ -137,7 +138,7 @@
             <param lpi_mode="NON_LPI_BARGE_IN" />
             <param app_type="2" /> <!-- app type used in ACDB -->
             <param pdk5_app_type="5" />
-            <param in_channels="2"/> <!-- Module input channels -->
+            <param in_channels="1"/> <!-- Module input channels -->
             <module_params>
                 <param module_type="GMM" />
                 <param load_sound_model_ids="0x00012C1C, 0x0, 0x00012C14" />
@@ -203,8 +204,8 @@
         </lsm_usecase>
         <lsm_usecase>
             <param capture_device="HEADSET" />
-            <param adm_cfg_profile="FFECNS" />
-            <param fluence_type="FLUENCE_MIC" />
+            <param adm_cfg_profile="DEFAULT" />
+            <param fluence_type="NONE" />
             <param execution_mode="ADSP" />
             <param app_type="2" /> <!-- app type used in ACDB -->
             <param pdk5_app_type="5" />
@@ -331,7 +332,7 @@
             <param capture_device="HANDSET" />
             <!-- adm_cfg_profile should match with the one defined under adm_config -->
             <!-- Set it to NONE if LSM directly connects to AFE -->
-            <param adm_cfg_profile="FFECNS" />
+            <param adm_cfg_profile="DEFAULT" />
             <!-- fluence_type: "FLUENCE_MIC", "FLUENCE_DMIC", "FLUENCE_TMIC"   -->
             <!-- "FLUENCE_QMIC". Param value is valid when adm_cfg_profile -->
             <!-- is FFECNS -->
@@ -499,7 +500,7 @@
             <param capture_device="HANDSET" />
             <!-- adm_cfg_profile should match with the one defined under adm_config -->
             <!-- Set it to NONE if LSM directly connects to AFE -->
-            <param adm_cfg_profile="FFECNS" />
+            <param adm_cfg_profile="DEFAULT" />
             <!-- fluence_type: "FLUENCE_MIC", "FLUENCE_DMIC", "FLUENCE_TMIC"   -->
             <!-- "FLUENCE_QMIC". Param value is valid when adm_cfg_profile -->
             <!-- is FFECNS -->
@@ -643,6 +644,7 @@
         <param sample_rate="16000" />
         <param bit_width="16" />
         <param out_channels="1"/> <!-- Module output channels -->
+        <param dam_token_id="1"/>
         <param get_module_version="true"/>
         <lsm_usecase>
             <param capture_device="HANDSET" />
@@ -787,7 +789,7 @@
         <param app_type="69947" />
         <param sample_rate="16000" />
         <param bit_width="16" />
-        <param out_channels="2"/>
+        <param out_channels="1"/>
     </adm_config>
 
     <adm_config>
