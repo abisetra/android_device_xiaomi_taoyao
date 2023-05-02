@@ -17,6 +17,9 @@ function blob_fixup() {
         vendor/lib64/hw/camera.xiaomi.so)
             "${SIGSCAN}" -p "29 07 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
+	 vendor/etc/camera/taoyao_motiontuning.xml)
+            sed -i 's/xml=version/xml\ version/g' "${2}"
+	    ;;
     esac
 }
 
@@ -29,7 +32,7 @@ fi
 set -e
 
 # Required!
-export DEVICE=lisa
+export DEVICE=taoyao
 export DEVICE_COMMON=sm8350-common
 export VENDOR=xiaomi
 

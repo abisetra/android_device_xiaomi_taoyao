@@ -317,7 +317,7 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
     <string name="config_mainBuiltInDisplayCutout">
-        M 0,0 H 144 V 104 H 0 V 0 Z @left
+        M -24.5 51.75 a 24.5 24.5 0 1 0 49 0 a 24.5 24.5 0 1 0 -49 0 Z
     </string>
 
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
@@ -325,7 +325,7 @@
     <integer name="config_defaultRefreshRate">0</integer>
 
     <!-- The default peak refresh rate. -->
-    <integer name="config_defaultPeakRefreshRate">90</integer>
+    <integer name="config_defaultPeakRefreshRate">120</integer>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
