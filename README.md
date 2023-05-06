@@ -1,26 +1,30 @@
-Copyright (C) 2022 The LineageOS Project
+#  TWRP Device Tree for Xiaomi 12 Lite (taoyao)
 
-Device configuration for Xiaomi 11 Lite 5G NE
-=========================================
-
-The Xiaomi 11 Lite 5G NE (codenamed _"lisa"_) is a mid-range smartphone from Xiaomi.
-
-It was released in September 2021.
+The Xiaomi 12 Lite (codenamed "taoyao") is a High-range smartphone from Xiaomi. It was announced in August 2022 and released in July 11 2022.
 
 ## Device specifications
 
-Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | Kryo 670, Up to 2.4 GHz, Octa-core CPU
-Chipset | Qualcomm Snapdragon 778G 5G (SM7325-2-AB)
-GPU     | Adreno 642L
-Memory  | 6/8 GB, LPDDR4X
-Storage | 128/256 GB, UFS 2.2
-Shipped Android Version | 11
-Battery | Non-removable 4250 mAh
-Display | 2400 x 1080 pixels, 6.55 inches
-Camera  | 64 MP main, 8 MP ultra-wide angle, 5 MP telemacro, 20 MP front
+| Feature                 | Specification                                                                  |
+| :---------------------- | :------------------------------------------------------------------------------|
+| Chipset                 | Qualcomm SM7325 Snapdragon 778G 5G (6 nm)                                      |
+| CPU                     | Octa-core (1x2.4 GHz Cortex-A78 & 3x2.2 GHz Cortex-A78 & 4x1.9 GHz Cortex-A55) |
+| GPU                     | Adreno 642L                                                                    |
+| Memory                  | 8 GB                                                                           |
+| Shipped Android Version | 12.0 (MIUI 13)                                                                 |
+| Storage                 | 256 GB eMMC                                                                    |
+| SIM                     | Dual SIM (Nano-SIM, dual stand-by)                                             |
+| Battery                 | Li-Po 4300 mAh, non-removable                                                  |
+| Dimensions              | 159.3 x 73.7 x 7.3 mm (6.27 x 2.90 x 0.29 in)                                  |
+| Display                 | 6.55 inches, 103.6 cm2 (~88.2% screen-to-body ratio)                           |
+| Rear Camera 1           | 108 MP, f/1.9, 26mm (wide), 1/1.52", 0.7µm, PDAF                               |
+| Rear Camera 2           | 8 MP, f/2.2, 120˚ (ultrawide), 1/4.0", 1.12µm                                  |
+| Rear Camera 3           | 2 MP, f/2.4, (macro)                                                           |
+| Front Camera            | 32 MP, f/2.5, (wide), 1/2.8", 0.8µm, AF                                        |
+| Fingerprint             | Rear-mounted                                                                   |
+| Sensors                 | Accelerometer, Gyro, Proximity, Compass                                        |
 
 ## Device picture
 
-![Xiaomi 11 Lite 5G NE](https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-11-lite-5g-ne/specs_01-fix.png "Xiaomi 11 Lite 5G NE")
+![Xiaomi 12 Lite ](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-12-lite-2.jpg)
+
+
